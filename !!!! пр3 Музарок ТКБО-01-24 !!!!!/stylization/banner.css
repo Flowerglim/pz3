@@ -1,0 +1,151 @@
+.banner {
+  background-image: url(images/banner.png);
+  background-size: auto;
+  align-items: center;
+  text-align: center;
+  margin-inline: 120px;
+  padding-bottom: 91px;
+}
+
+h2 {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 196px;
+}
+
+.banner__nav {
+  margin-top: 263px;
+  display: flex;
+  background-color: rgb(69, 103, 170);
+  width: 1108px;
+  margin-inline: auto;
+}
+
+.fake__date {
+  background-color: white;
+  align-items: center;
+  width: 476px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fake__date > span {
+  margin-left: 25px;
+  font-family: "Hind Madurai";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.ellipse-down {
+  margin-left: 38px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.fake__people {
+  width: 520px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-left: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fake__people > span {
+  font-family: "Hind Madurai";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.ellipse-plus {
+  margin-left: 38px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.ellipse-minus {
+  margin-left: 25px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.ellipse-plus {
+  margin-left: 62px;
+}
+
+.ellipse-plus > img, .ellipse-minus > img {
+  padding-top: 5px;
+}
+
+.fake__count {
+  margin-left: 16px;
+  font-family: "Hind Madurai";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.fake__line {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  margin: 15px 0 0 6px;
+}
+
+.fake-search {
+  width: 112px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-left: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ellipse-search {
+  background-color: rgb(69, 103, 170);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.ellipse-search > img {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}/*# sourceMappingURL=banner.css.map */

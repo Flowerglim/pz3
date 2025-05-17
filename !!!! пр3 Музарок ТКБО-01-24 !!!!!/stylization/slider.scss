@@ -1,0 +1,225 @@
+.slider__title-background{
+    background-image: url(images/slidertitle.png);
+    text-align: center;
+    margin-top: 84px;
+    width: 636px;
+    height: 211px;
+    margin-inline: auto;
+    margin-top: 84px;
+}
+
+.slider__title{
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding-top: 51px;
+}
+
+.slider__title-description{
+    font-family: 'Hind Madurai';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+
+.sliderNew{
+    background-color: rgba(245, 245, 245, 1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.wrap{
+    position: relative;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sliderNew-item {
+    display: none;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.sliderNew-item img{
+    width: 40%;
+}
+
+.sliderNew-time__nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.sliderimg__title{
+    font-family:'Hind Madurai';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: rgba(69, 103, 170, 1);
+}
+
+.sliderimg__square, .sliderimg__people, .sliderimg__view{
+    font-family: 'Hind Madurai';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(69, 103, 170, 1);
+}
+
+.sliderimg__square{
+    margin-left: 94px;
+}
+
+.sliderimg__people{
+    margin-left: 37px;
+}
+
+.sliderimg__view{
+    margin-left: 31px;
+}
+
+.sliderimg__people > img{
+    margin-right: 16px;
+    padding-top: 2px;
+    width: 24px;
+    height: 24px;
+}
+
+.sliderNew-time__buttons{
+    display: flex;
+    gap: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+}
+
+.slider__brony-button{
+    background-color: rgba(69, 103, 170, 1);
+    border-radius: 2px;
+    width: 245px;
+    height: 60px;
+    color: white;
+    font-family: 'Hind Madurai';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+}
+
+.slider__ask-button{
+    border: 2px solid rgba(69, 103, 170, 1);
+    border-radius: 2px;
+    font-family: 'Hind Madurai';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    width: 185px;
+    height: 60px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    color: rgba(69, 103, 170, 1);
+
+    transition: all 0.3s ease;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4567AA;
+    font-size: 45px;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(69, 103, 170, 0.7);
+    color: white;
+}
+
+.sliderNew-dots {
+    text-align: center;
+    margin: 1rem 0;
+    padding-bottom: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #a0a1a9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.dot-active,
+.dot:hover {
+    background-color: #4567AA;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

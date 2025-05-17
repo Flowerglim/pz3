@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отелыч - комфортный отдых в Крыму</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav__burger" id="burger">
+            <span class="nav__burger-line"></span>
+            <span class="nav__burger-line"></span>
+            <span class="nav__burger-line"></span>
+        </div>
+
+        <div class="nav__menu" id="menu">
+            <div class="nav__menu-logo"><img src="icons & logos/ЛОГО.png" alt="Логотип Отелыч" width="200" height="60"></div> 
+
+            <div class="nav__menu-content">
+                <div class="nav__menu-content-left">
+                    <ul class="menu__list-left">
+                        <li class="menu__list-item">Номера и цены</li>
+                        <li class="menu__list-item">Об отеле</li>
+                        <li class="menu__list-item">Услуги</li>
+                        <li class="menu__list-item">Условия проживания</li>
+                        <li class="menu__list-item">Новости</li>
+                        <li class="menu__list-item">Контакты</li>
+                        <li class="menu__list-item">Фото отеля</li>
+                        <li class="menu__list-item">Как добраться</li>
+                        <li class="menu__list-item">Отзывы гостей</li>
+                    </ul>
+                </div>
+                <div class="nav__menu-content-right">
+                    <ul class="menu__list-right">
+                        <li class="menu__list-item">Достопримечательности</li>
+                        <li class="menu__list-item">Паста-бар</li>  
+                        <li class="menu__list-item">Активный отдых</li>
+                        <li class="menu__list-item">Спецпредложения</li>
+                    </ul>
+                    <div class="nav__brony-button"> 
+                        <p class="nav__brony-description">забронировать</p>
+                        <div class="nav__brony-arrow">
+                            <span class="diagonal-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="nav__menu-line">
+
+            <div class="menu__contacts">
+                <div class="menu__phone">
+                    <img src="icons & logos/phone.png" alt="Телефон" width="24" height="24">  
+                    <span class="menu__phone-number">8 (912) 038-80-44</span>  
+                </div>
+                <p class="menu__address">
+                    298690, Россия, Крым, г. Ялта, пгт<br>
+                    Форос, Форосский спуск, 1
+                </p>
+            </div>
+
+            <div class="menu__icons">
+                <img src="icons & logos/VK.png" alt="ВКонтакте">  
+                <img src="icons & logos/YouTube.png" alt="YouTube">  
+                <img src="icons & logos/zen-new-icon 1.png" alt="Яндекс Дзен">  
+            </div>
+        </div>
+
+        <div class="nav__logo"><img src="icons & logos/ЛОГО.png" alt="" width="120" height="40"></div>
+
+        <button class="nav__brony-button" id="booking-btn"> 
+            <p class="nav__brony-description">забронировать</p>
+            <div class="nav__brony-arrow">
+                <span class="diagonal-arrow"></span>
+            </div>
+        </button>
+    </nav>
+
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h1 class="modal__title" id="modal-title">Забронируйте этот номер</h1>
+            <form class="modal__form" action="">
+                <input class="name" type="text" placeholder="Ваше имя" required><br>
+                <input class="date-arrival" type="date" placeholder="Дата заезда" required>
+                <input class="date-departure" type="date" placeholder="Дата выезда" required><br>
+                <select name="adults" id="adults-select">
+                    <option value="0" disabled selected>Взрослые</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <select name="kids" id="kids-select">
+                    <option value="0" disabled selected>Дети до 12 лет</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br>
+                <input class="phone-number" type="tel" placeholder="Ваш номер телефона"><br>
+                <button class="submit-btn" type="submit" >Забронировать</button><br>
+                <input class="privacy-checkbox" type="checkbox" id="privacy-check">
+                <span class="tom-holland-text">Нажимая на кнопку, вы автоматически соглашаетесь с <span class="privacy-underline">Политикой конфиденциальности</span></span>
+            </form>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h2>Комфортный отдых в Крыму</h2>
+        <div class="banner__nav">
+            <div class="fake__date">
+                <img src="icons & logos/calendar-24.png" alt="">
+                <span>дата заезда - дата выезда</span>
+                <div class="ellipse-down">
+                    <img src="icons & logos/chevron-down-24.png" alt="">
+                </div>
+            </div>
+
+            <div class="fake__people">
+                <img src="icons & logos/people-24.png" alt="">
+                <span>кол-во человек</span>
+                <div class="ellipse-plus">
+                    <img src="icons & logos/plus.png" alt="">
+                </div>
+                <span class="fake__count">00</span>
+                <div class="ellipse-minus">
+                    <span class="fake__line"></span>
+                </div>
+            </div>
+
+            <div class="fake-search">
+                <div class="ellipse-search">
+                    <img src="icons & logos/search-24.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider__title-background">
+        <h3 class="slider__title">Номера</h3>
+        <p class="slider__title-description">Выбери свой номер</p>
+    </div>
+
+    <div class="sliderNew" id="slider">
+        <div class="wrap">
+            <div class="sliderNew-item fade">
+                <img src="images/море.png" alt="">
+                <div class="sliderNew-time__nav">
+                    <span class="sliderimg__title">Люкс</span>
+                    <span class="sliderimg__square">S-40 кв.м.</span>
+                    <span class="sliderimg__people"><img src="icons & logos/blue.png" alt="">4</span>
+                    <span class="sliderimg__view">Море</span>
+                </div>
+                
+                <div class="sliderNew-time__buttons">
+                    <div class="slider__brony-button">Забронировать</div>
+                    <div class="slider__ask-button">Подробнее</div>
+                </div>
+            </div>
+
+
+            <div class="sliderNew-item fade">
+                <img src="images/серая кровать.png" alt="">
+                <div class="sliderNew-time__nav">
+                    <span class="sliderimg__title">Стандарт</span>
+                    <span class="sliderimg__square">S-18 кв.м.</span>
+                    <span class="sliderimg__people"><img src="icons & logos/blue.png" alt="">2</span>
+                    <span class="sliderimg__view">Терасса</span>
+                </div>
+                
+                <div class="sliderNew-time__buttons">
+                    <div class="slider__brony-button">Забронировать</div>
+                    <div class="slider__ask-button">Подробнее</div>
+                </div>
+            </div>
+
+
+            <div class="sliderNew-item fade">
+                <img src="images/красная кровать.png" alt="">
+                <div class="sliderNew-time__nav">
+                    <span class="sliderimg__title">Делюкс</span>
+                    <span class="sliderimg__square">S-36 кв.м.</span>
+                    <span class="sliderimg__people"><img src="icons & logos/blue.png" alt="">4</span>
+                    <span class="sliderimg__view">Горы</span>
+                </div>
+                
+                <div class="sliderNew-time__buttons">
+                    <div class="slider__brony-button">Забронировать</div>
+                    <div class="slider__ask-button">Подробнее</div>
+                </div>
+            </div>
+
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+        </div>
+            <div class="sliderNew-dots">
+                <div class="dot dot-active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div> 
+    </div>
+
+
+    <div class="accordion__block">
+        <h4>вам понравится у нас</h4>
+        <div class="accordion__content">
+            <div id="accordion">
+                <div class="accordion-item">
+                    <p class="accordion-head">
+                        <span class="accordion__num">01</span>
+                        <span class="accordion__title">паста бар</span>
+                        <span class="accordion__dlc">подробнее</span>
+                        <hr class="accordion__line">
+                    </p>
+                    <div class="accordion-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, labore?</div>
+                </div>
+
+                <div class="accordion-item">
+                    <p class="accordion-head">
+                        <span class="accordion__num">02</span>
+                        <span class="accordion__title">Арома-сад</span>
+                        <span class="accordion__dlc">подробнее</span>
+                        <hr class="accordion__line">
+                    </p>
+                    <div class="accordion-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, labore?</div>
+                </div>
+
+                <div class="accordion-item">
+                    <p class="accordion-head">
+                        <span class="accordion__num">03</span>
+                        <span class="accordion__title">Пляж</span>
+                        <span class="accordion__dlc">подробнее</span>
+                        <hr class="accordion__line">
+                    </p>
+                    <div class="accordion-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, labore?</div>
+                </div>
+
+                <div class="accordion-item">
+                    <p class="accordion-head">
+                        <span class="accordion__num">04</span>
+                        <span class="accordion__title">Территория отеля</span>
+                        <span class="accordion__dlc">подробнее</span>
+                        <hr class="accordion__line">
+                    </p>
+                    <div class="accordion-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, labore?</div>
+                </div>
+                
+
+                <div class="accordion__fake-pages">
+                    <div class="accordion__arrow-left">&#8592</div>
+                    <span class="accordion__list">01/06</span>
+                    <div class="accordion__arrow-left">&#8594</div>
+                </div>
+            </div>
+
+            <div class="accordion__image">
+                <img src="images/cocktail-on-the-beach-2022-01-12-07-35-50-utc 1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="rest" id="tab">
+        <h5>Активный отдых в отеле санторини</h5>
+        <div class="rest__header">
+            <div class="rest__header-tab active">Морские прогулки</div>
+            <div class="rest__header-tab">Спа</div>
+            <div class="rest__header-tab">Рыбалка</div>
+        </div>
+
+        <div class="rest__tabcontent show">
+            <div class="sea-photos">
+                <div class="sea1">
+                    <img src="images/tab/still-sea-surface-man-practicing-wind-surfing-and-2021-09-15-06-23-50-utc 1.png" alt="">
+                    <div class="sea1-btn">Виндсерфинг<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea2">
+                    <img src="images/tab/kite-surfing-2021-08-26-17-04-56-utc (1) 1.png" alt="">
+                    <div class="sea2-btn">Кайтсерфинг<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea3">
+                    <img src="images/tab/моцик.png" alt="">
+                    <div class="sea3-btn">Эндуро-тур<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea4">
+                    <img src="images/tab/safari.png" alt="">
+                    <div class="sea4-btn">Сафари на джипах<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rest__tabcontent hide">
+            <div class="sea-photos">
+                <div class="sea1">
+                    <img src="images/tab/массаж.jpg" alt="">
+                    <div class="sea1-btn">Массаж<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea2">
+                    <img src="images/tab/притирание.jpg" alt="">
+                    <div class="sea2-btn">Притирания<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea3">
+                    <img src="images/tab/ванны.jpg" alt="">
+                    <div class="sea3-btn">Ванны<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea4">
+                    <img src="images/tab/Обёртывание.jpg" alt="">
+                    <div class="sea4-btn">Обёртывания<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rest__tabcontent hide">
+            <div class="sea-photos">
+                <div class="sea1">
+                    <img src="images/tab/подводная рыбалка.jpg" alt="">
+                    <div class="sea1-btn">Подводная<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea2">
+                    <img src="images/tab/поплавочная рыбалка.jpg" alt="">
+                    <div class="sea2-btn">Поплавочная<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea3">
+                    <img src="images/tab/спин.jpg" alt="">
+                    <div class="sea3-btn">Спиннинговая<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+
+                <div class="sea4">
+                    <img src="images/tab/нахлыст.jpg" alt="">
+                    <div class="sea4-btn">Нахлыст<div class="tab__orange-btn"><span class="diagonal-arrow"></span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offers">
+        <div class="offers__title-background">
+            <img class="offers__title-background-left" src="images/Group 331.png" alt="">
+            <h6>наши<br> спецпредложения</h6>
+            <img class="offers__title-background-right" src="images/Group 332.png" alt="">
+        </div>
+
+        <div class="offers__container">
+            <div class="offers__content">
+                <div class="offers__content-block">
+                    <div class="offers__image"><img src="images/bedoffers.png" alt=""></div>
+                    <div class="offers__description">
+                        <span class="offers__data-block">12/06.22</span>
+                        <span class="offers__title-block">скидка на проживание 10% от 5 суток</span>
+                        <span class="offers__description-block">Аренда номера Делюкс на 4 человек с видом на море и<br> собвенной терассой. Коктейли в подарок единоразово при<br> размещении.</span>
+                        <div class="offers__links-block">
+                            <a href="" class="offers-blue">подробнее</a>
+                            <a href="" class="offers-orange">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="offers__line">
+
+                <div class="offers__content-block">
+                    <div class="offers__image"><img src="images/flowers.png" alt=""></div>
+                    <div class="offers__description">
+                        <span class="offers__data-block">12/06.22</span>
+                        <span class="offers__title-block">Комплимент молодоженам и 1-сутки в подарок</span>
+                        <span class="offers__description-block">Аренда номера Делюкс на 4 человек с видом на море и<br> собвенной терассой. Коктейли в подарок единоразово при<br> размещении.</span>
+                        <div class="offers__links-block">
+                            <a href="" class="offers-blue">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="offers__line">
+
+                <div class="offers__content-block">
+                    <div class="offers__image"><img src="images/bedoffers.png" alt=""></div>
+                    <div class="offers__description">
+                        <span class="offers__data-block">12/06.22</span>
+                        <span class="offers__title-block">Фотосессия в подарок при оплате 10 суток</span>
+                        <span class="offers__description-block">Аренда номера Делюкс на 4 человек с видом на море и<br> собвенной терассой. Коктейли в подарок единоразово при<br> размещении.</span>
+                        <div class="offers__links-block">
+                            <a href="" class="offers-blue">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="offers__line">
+            </div>
+        </div>
+        
+        <div class="offers__links-end">
+            <a href="" class="offers__link-blue">Смотреть все</a>
+            <a href="" class="offers__link-orange">Смотреть все</a>
+        </div>
+    </div>
+
+    <div class="video">
+        <span class="video__title">
+            <img class="video__title-left" src="images/Group 331.png" alt="">
+            посмотрите Обзорное видео о нашем отеле
+            <img class="video__title-right" src="images/Group 332.png" alt="">
+        </span>
+
+        <div class="video__fake">
+            <img src="images/fakevideo.png" alt="">
+        </div>
+        
+        <div class="video__play">
+            <img class="play" src="images/Плэй.png" alt="">
+        </div>
+
+        <hr class="video__line">
+    </div>
+
+
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="icons & logos/ЛОГО.png" alt="">
+            </div>
+
+            <div class="footer__contacts">
+                <div class="footer__phone-number">
+                    <img src="icons & logos/phone.png" alt="">
+                    <span>8(912) 038-80-44</span>
+                </div>
+                <p class="footer__address">298690, Россия, Крым, г. Ялта, пгт Форос,<br> Форосский спуск, 1</p>
+            </div>
+
+             
+        
+            <div class="footer__list">
+                <ul class="footer__list1">
+                    <li>Номера и цены</li>
+                    <li>Об отеле</li>
+                    <li>Услуги</li>
+                    <li>Условия проживания</li>
+                    <li>Новости</li>
+                    <li>контакты</li>
+                    <li>Фото отеля</li>
+                    <li>Как добраться</li>
+                    <li>Отзывы гостей</li>
+                </ul>
+                <ul class="footer__list2">
+                    <li>Достопримечательности</li>
+                    <li>паста-бар</li>
+                    <li>Активный отдых</li>
+                    <li>эКСТРИМ</li>
+                    <li>МОРСКИЕ ПРОГУЛКИ</li>
+                    <li>рЫБАЛКА</li>
+                    <li>Спецпредложения</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__end">
+            <span class="footer__copyright">© 2022 Cанторини. Все права защищены.</span>
+            <div class="footer__links">
+                <img src="icons & logos/VK.png" alt="">
+                <img src="icons & logos/YouTube.png" alt=""
+                ><img src="icons & logos/zen-new-icon 1.png" alt="">
+            </div>
+            <span class="footer__private-policy">Политика конфиденциальности</span>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

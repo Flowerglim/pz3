@@ -1,0 +1,118 @@
+@media (max-width: 375px) {
+  nav {
+    padding: 0 15px;
+  }
+
+  .nav__logo img {
+    width: 120px;
+  }
+
+  .nav__burger {
+    padding: 10px 10px 0 0;
+  }
+
+  h2 {
+    font-size: 40px;
+    padding-top: 80px;
+  }
+
+  .banner__nav {
+    margin-top: 100px;
+  }
+
+  .slider__title-background{
+    background-image: none;
+  }
+
+  .slider__title {
+    font-size: 30px;
+  }
+
+  .slider__title-description {
+    font-size: 20px;
+  }
+
+  .sliderNew-item img {
+    width: 100%;
+  }
+
+  .sliderimg__square, 
+  .sliderimg__people, 
+  .sliderimg__view {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .sliderNew-time__buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .accordion__block h4 {
+    font-size: 30px;
+  }
+
+  .accordion__num {
+    margin-right: 15px;
+  }
+
+  .accordion__title {
+    font-size: 24px;
+  }
+
+  .accordion__image > img{
+    width: 340px;
+    height: 340px;
+  }
+
+  .rest__header-tab {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .sea1-btn, .sea2-btn, .sea3-btn, .sea4-btn {
+    font-size: 16px;
+    height: 40px;
+    bottom: 46px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h6 {
+    font-size: 30px;
+  }
+
+  .offers__links-block {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .offers__links-end {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .modal__title {
+    font-size: 30px;
+  }
+
+  .name, .phone-number, .submit-btn {
+    width: 100%;
+  }
+
+  .date-arrival, #adults-select, 
+  .date-departure, #kids-select {
+    width: 48%;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

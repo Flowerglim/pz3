@@ -1,0 +1,10 @@
+@media (max-width: 1024px) {
+    .banner__nav{
+        width: inherit;
+    }
+
+    .accordion__image, .accordion__image > img{
+        width: 300px;
+        height: 350px;
+    }
+}

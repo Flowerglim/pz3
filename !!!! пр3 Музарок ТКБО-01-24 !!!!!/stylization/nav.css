@@ -1,0 +1,209 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+.nav__burger-line {
+  width: 54px;
+  height: 4px;
+  background-color: rgb(70, 102, 169);
+  transition: all 0.3s;
+  display: block;
+}
+
+.nav__burger {
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 41px 0 0;
+  display: flex;
+}
+.nav__burger:focus {
+  outline: 2px solid #4567AA;
+  outline-offset: 2px;
+}
+
+.nav__burger span:not(:first-child) {
+  margin-top: 10px;
+}
+
+.nav__menu {
+  padding: 30px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 100;
+  width: 1080px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav__menu.active {
+  display: inline-block;
+}
+
+.nav__burger.active .nav__burger-line:first-child {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.nav__burger.active .nav__burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__burger.active .nav__burger-line:last-child {
+  transform: rotate(-45deg) translateY(-5px);
+  margin-top: -14px;
+}
+
+.nav__menu-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list-left, .menu__list-right {
+  padding: 0;
+  list-style: none;
+}
+
+.menu__list-right {
+  padding-left: 80px;
+}
+
+.menu__list-item {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu__list-item:hover {
+  color: rgb(69, 103, 170);
+}
+
+.nav__brony-button {
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+  width: 283px;
+  height: 70px;
+  background-color: rgb(69, 103, 170);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.nav__brony-button :hover {
+  background-color: rgb(89, 128, 207);
+}
+
+.nav__menu-line {
+  width: 100%;
+  max-width: 711px;
+  border: 1px solid rgb(69, 103, 170);
+  margin: 30px 0;
+}
+
+.menu__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__phone {
+  display: flex;
+  align-items: center;
+}
+
+.menu__phone-number {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(69, 103, 170);
+  margin-left: 15px;
+}
+
+.menu__address {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(70, 102, 169);
+  margin-left: 110px;
+  line-height: 1.4;
+}
+
+.menu__icons {
+  display: flex;
+  padding: 20px 0;
+}
+
+.menu__icons :first-child {
+  margin-left: 0;
+}
+
+.menu__icons img {
+  cursor: pointer;
+  margin-left: 20px;
+  transition: opacity 0.3s;
+}
+
+.menu__icons img:hover {
+  opacity: 0.8;
+}
+
+.nav__menu-logo > img {
+  padding-top: 20px;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+  height: 80px;
+  position: relative;
+}
+
+.nav__brony-description {
+  color: white;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.diagonal-arrow {
+  display: inline-block;
+  position: relative;
+  width: 23px;
+  height: 23px;
+}
+
+.diagonal-arrow::before {
+  content: "→";
+  position: absolute;
+  transform: rotate(-45deg);
+  font-size: 23px;
+  line-height: 1;
+  color: white;
+}
+
+.nav__logo {
+  padding-top: 38px;
+  padding-left: 5px;
+}/*# sourceMappingURL=nav.css.map */
